@@ -1,0 +1,221 @@
+@charset "utf-8";
+html {
+  height: 100%;
+}
+body {
+  position: relative;
+  padding-bottom: 75px;
+  min-height: 100%;
+}
+li {
+  list-style: none;
+}
+p, ul {
+  margin: 0;
+  padding: 0;
+}
+div,li {
+  box-sizing: border-box;
+}
+.header_nav {
+  background: linear-gradient(90deg, #fff 20%, rgba(0,0,0,.6) 60%);
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: stretch;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.global_nav_item {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+.global_nav_item:hover {
+  background: #fff;
+  color: #42210b;
+}
+.global_nav {
+  display: flex;
+  align-items: stretch;
+}
+.logo {
+  width: 120px;
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  width: 100%;
+}
+.section_inner {
+  padding: 80px 5%;
+}
+.key {
+  height: 500px;
+  background: center / cover no-repeat url("/Users/sugiyamatakuya/dic_cafe/images/web_html_grammer-master/sample_key.jpg");
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.key h1{
+  font-size: 2.5rem;
+}
+.section_title {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 50px;
+  width: 100%;
+}
+.menu_title {
+  display: inline-block;
+  font-family: 'Noto Serif JP', serif;
+  font-size: 1.5rem;
+  color: #42210b;
+  border-bottom: solid #42210b 1px;
+  margin-bottom: 20px;
+}
+.center {
+  text-align: center;
+}
+.caffee_menu_image {
+  width: 20%;
+  border-radius: 50%;
+}
+.concept_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .concept_section .concept_text {
+    width: 55%;
+  }
+  .concept_image {
+    width: 35%;
+  }
+  .menu_section {
+    background: url('/Users/sugiyamatakuya/dic_cafe/images/web_html_grammer-master/sample_menu_bg.jpg') no-repeat center center; /* 背景画像を中央に設定 */
+    background-size: cover; /* 背景画像を要素全体にカバー */
+    background-attachment: fixed; /* 背景画像をスクロール時に固定 */
+    padding: 50px 0; /* セクション内のコンテンツの上下に余白を設定 */
+}
+  
+.recommended_menu {
+    display: flex;
+    margin-bottom: 50px;
+  }
+  
+  .menu_item {
+    display: flex; /* フレックスボックスで横並びに配置 */
+    justify-content: flex-start;
+    align-items: center; /* 高さ方向で中央揃え */
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.menu_item img {
+    width: 55%; /* 画像の幅を55%に設定 */
+    display: block;
+    height: auto;
+}
+
+.menu_text {
+    width: 45%; /* テキスト部分の幅を45%に設定 */
+    padding-left: 20px; /* 画像とテキストの間に余白を追加 */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu_text h2 {
+    margin-top: 0;
+    font-size: 1.5rem; /* タイトルのサイズ調整 */
+}
+
+.menu_text p {
+    margin: 10px 0;
+    font-size: 1rem; /* 説明文のサイズ調整 */
+}
+
+.menu_text .price {
+    font-size: 1.5rem; /* 価格のフォントサイズを少し大きくする */
+    text-align: right; /* 価格を右揃えにする */
+    margin-top: auto; /* 価格をテキストボックスの下に揃える */
+}
+.coffee_menu {
+    display: flex;
+    flex-wrap: wrap; /* 複数行に渡る場合の折り返しを許可 */
+    justify-content: space-between; /* 各メニューアイテム間のスペースを均等にする */
+    padding: 20px;
+    background-color: #f0f8e8; /* 背景色を指定 */
+  }
+  
+  .menu_item {
+    display: flex;
+    width: 49%; /* 各メニューアイテムの幅を49%に設定 */
+    margin-bottom: 20px; /* 下に余白を追加 */
+    align-items: center; /* 垂直方向の中央揃え */ 
+    box-sizing: border-box;
+    background-color: #fff; /* 背景色を白に設定 */
+  }
+  
+  .menu_item img {
+    width: 20%; /* 画像の幅を20%に設定 */
+    margin-right: 20px; /* 画像とテキストの間に余白を追加 */
+  }
+  
+  .menu_text {
+    width: 80%; /* テキスト部分の幅を80%に設定 */
+  }
+  
+  .menu_text h2 {
+    margin: 0 0 10px 0;
+    font-size: 1.2rem; /* タイトルのサイズ調整 */
+  }
+  
+  .menu_text p {
+    margin: 0;
+    font-size: 1rem; /* 説明文のサイズ調整 */
+  }
+  
+.access_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
+  
+  .access_details {
+    width: 80px; /* 左側の情報部分の幅を80pxに設定 */
+    margin-right: 20px;
+  }
+  
+  .access_row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .access_row dt {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .access_row dd {
+    margin: 0;
+  }
+  
+  .access_map {
+    flex-grow: 1; /* Google Mapが幅100%をとるように設定 */
+  }
+  
+  .access_map iframe {
+    width: 100%; /* Google Mapの幅を100%に設定 */
+    height: 300px; /* 高さは任意に設定 */
+  }
+  
